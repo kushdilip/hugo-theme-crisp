@@ -4,7 +4,7 @@
     {{ with .Site.Params.disqus }}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-      var disqus_shortname = '{{ . }}';
+      var disqus_shortname = 'kushdilipblog';
       var disqus_identifier = '{{if isset $doc.Params "disqus_identifier" }}{{ index $doc.Params "disqus_identifier" }}{{ else }}{{ $doc.Permalink }}{{end}}';
       var disqus_title = '{{if isset $doc.Params "disqus_title" }}{{ index $doc.Params "disqus_title" }}{{ else }}{{ $doc.Title }}{{end}}';
       var disqus_url = '{{if isset $doc.Params "disqus_url" }}{{ index $doc.Params "disqus_url" | html  }}{{ else }}{{ $doc.Permalink }}{{end}}';
